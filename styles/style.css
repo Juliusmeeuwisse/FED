@@ -1,0 +1,993 @@
+/* CSS Document */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  padding: 0px;
+  overflow-x: hidden;
+}
+/*
+#hamburgermenu {
+  display: none;
+}
+
+.showNav {
+  display: block;
+}
+*/
+
+.blackbar {
+  position: absolute;
+  top: 0px;
+  height: 48px;
+  width: 100%;
+  z-index: 5;
+  background-color: black;
+}
+
+.shiptext {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.91em;
+  font-weight: bold;
+  color: white;
+  z-index: 5;
+  position: absolute;
+  top: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.videocontainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background-color: black;
+}
+
+.videocontainer video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  transform: translate(-55%, -55%);
+  opacity: 66%;
+}
+
+.navbar {
+  position: absolute;
+  top: 8%;
+  margin-top: 0;
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+
+}
+
+.navitem {
+  width: 43px;
+  height: auto;
+}
+
+.navlogo {
+  width: 6.7rem;
+  height: auto;
+  margin-left: 30px;
+}
+
+.bigbuttondefault {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  border: none;
+  color: black;
+  background-color: white;
+  padding: 19px 10%;
+  font-size: 16px;
+  border-radius: 35px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 7%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.bigTextBold {
+  font-family: 'lato', serif;
+  color: #212519;
+  z-index: 5;
+  font-size: 2.5em;
+  line-height: 1.2;
+  font-weight: 900;
+  text-align: center;
+
+}
+
+.headtextdefault {
+  font-family: 'Lusitana', serif;
+  font-size: 2em;
+  z-index: 2;
+  color: white;
+  font-weight: 200;
+  margin-left: 11%;
+  width: 70%;
+}
+
+.smalltextdefault {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  color: white;
+  z-index: 2;
+  line-height: 26px;
+  margin-left: 11%;
+  width: 70%;
+  margin-top: 3%;
+}
+
+/* RESONANCE STUKJE*/
+.resonance {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+
+/*Slider Default */
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  overflow: scroll;
+  overflow-y: hidden;
+  align-items: center;
+  height: 60vh;
+}
+
+.slideritem {
+  position: relative;
+  max-width: 100%;
+  width: 18rem;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.sliderhead {
+  font-family: "lato", serif;
+  font-size: 1.5em;
+  font-weight: 900;
+  position: absolute;
+  color: white;
+  margin-top: 8vh;
+  top: calc(15% - 1em);
+}
+
+.sliderimg {
+  display: block;
+  width: 95%;
+  height: auto;
+  border-radius: 8px;
+  max-width: 25em;
+  scroll-snap-align: center;
+  width: 17rem;
+}
+
+.sliderbutton {
+  position: absolute;
+  top: 0;
+  max-width: 150px;
+  margin-top: 15vh;
+  top: calc(15% - 1em);
+  margin-left: 0;
+}
+
+
+.slideritem1 {
+  margin-left: 10vw;
+}
+
+/* MOUNTAIN STUKJE*/
+
+.mountainimgcontainer {
+  position: absolute;
+  top: 160%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1000;
+  background-color: black;
+}
+
+.mountainimg {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 66%;
+  z-index: 100;
+}
+
+.mountain {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  display: flex;
+  text-align: left;
+  justify-content: flex-end;
+  height: 100vh;
+}
+
+.mountainhead {
+  font-family: 'Lato', serif;
+  font-size: 28px;
+  font-weight: 900;
+  margin-top: 70vh;
+}
+
+/*Stories Slider */
+.lateststories {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.storieshead {
+  font-family: "lato", serif;
+  font-size: 1.3em;
+  z-index: 2;
+  color: black;
+  font-weight: 900;
+  width: 100%;
+  text-align: center;
+  margin-top: 4vh;
+
+}
+
+.slider2 {
+  align-items: flex-start;
+  margin-top: 2em;
+}
+
+.storieslink {
+  font-family: "lato", serif;
+  font-size: 0.9em;
+  z-index: 2;
+  color: black;
+  font-weight: 900;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.8em;
+  text-decoration: underline;
+
+}
+
+.slider2head {
+  font-family: 'Lusitana', serif;
+  font-size: 1.3em;
+  font-weight: normal;
+  color: black;
+  margin-top: 10rem;
+  margin-left: 2rem;
+}
+
+.slider2button {
+  margin-top: 40vh;
+  background-color: white;
+  margin-left: 9rem;
+  font-size: 0.8em;
+  padding: 12px;
+  width: 40%;
+
+}
+
+.slider2item {
+  justify-content: left;
+  flex-direction: column;
+  background-color: rgb(243, 243, 243);
+  margin-right: 1.5rem;
+  width: 18rem;
+  border-radius: 10px;
+  min-height: 90%;
+}
+
+
+.slider2smalltext {
+  font-family: "lato", serif;
+  font-size: 0.8em;
+  position: absolute;
+  margin-top: 48vh;
+  margin-left: 3rem;
+}
+
+.slider2img {
+  width: 18rem;
+  border-radius: 8px 8px 0px 0px;
+}
+
+
+/* HAUNTED STUKJE*/
+
+.hauntedimgcontainer {
+  position: absolute;
+  top: 340%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1000;
+  background-color: black;
+}
+
+.hauntedimg {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 66%;
+  z-index: -1000;
+}
+
+.haunted {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  display: flex;
+  text-align: left;
+  justify-content: flex-end;
+  height: 100vh;
+}
+
+.hauntedhead {
+  font-family: 'Lusitana', serif;
+  font-size: 30px;
+}
+
+.hauntedbutton {
+  margin-bottom: 40vh;
+}
+
+/* Laatste slider*/
+
+.slider3button {
+  border: 5px solid white;
+  background-color: unset;
+  color: white;
+  padding: 6px 6px;
+  font-size: 0.8em;
+  margin-top: 17rem;
+  margin-left: 7rem;
+  position: absolute;
+  margin-right: 1rem;
+}
+
+.slider3text {
+  margin-top: 7rem;
+}
+
+.slider3 {
+  height: 70vh;
+  align-items: center;
+}
+
+.slider3img {
+  width: 18rem;
+  border-radius: 8px;
+}
+
+.slider3item {
+  margin-right: 1.5rem;
+  width: 18rem;
+}
+
+/* FOOTER*/
+
+footer {
+  background-color: black;
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.footersection {
+  margin-top: 5vh;
+  margin-left: 5vw;
+}
+.footersection3 {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+.S3List1 {
+  text-decoration: none;
+}
+.smallfootertext {
+  text-decoration: none;
+  color: rgb(180, 180, 180);
+}
+footer h3 {
+  font-family: 'lato', serif;
+  color: white;
+  z-index: 5;
+  font-size: 1.25em;
+  font-weight: 900;
+}
+
+footer :nth-child(2) {
+  font-family: 'lato', serif;
+  color: white;
+  z-index: 5;
+  font-size: 1.02em;
+  line-height: 1.75;
+  margin-top: 5vh;
+}
+
+.footersignup {
+  width: 10rem;
+  padding: 12px;
+  margin: 0;
+  margin-top: 5vh;
+  font-size: 1.1em;
+}
+
+.footerbutton {
+  width: 13rem;
+  padding: 8px;
+  margin: 0;
+  margin-top: 5vh;
+  font-size: 1.1em;
+  border: 5px solid white;
+  background-color: unset;
+  color: white;
+}
+
+.mailform {
+  width: 94%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  font-size: 1em;
+  margin-top: 5vh;
+}
+
+::placeholder {
+  opacity: 0.8;
+  color: white;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+.helptext {
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+}
+
+/*Activism Page*/
+.smalltextactivism {
+  font-family: 'lato', serif;
+  color: black;
+  z-index: 5;
+  font-size: 1em;
+  line-height: 1.7;
+  text-align: center;
+  margin-top: 4vh;
+  width: 80%;
+  font-weight: normal;
+
+}
+
+.activismhead {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Green Future section */
+.greenfutureimgcontainer {
+  position: absolute;
+  top: 200%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1000;
+  background-color: black;
+}
+
+.greenimg {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 66%;
+  z-index: 100;
+}
+
+.greenfuturesection {
+  height: 100vh;
+}
+/* First Slider of 2nd page */
+.actslider1 {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+.videocontainer2 {
+  position: absolute;
+  top: 370vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background-color: black;
+}
+/* Public Trust Stuk */
+.publictrust {
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+.publictrustHead {
+  font-size: 4.5em;
+  margin-top: 10vh;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  font-family: 'Lusitana', serif;
+  color: white;
+  font-weight: 200;
+}
+.publictrustText {
+  margin-left: 0;
+  width: 100%;
+  margin-right: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1em;
+  color: white;
+  margin-top: 2vh;
+}
+.publicTrustButton {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  border: none;
+  color: black;
+  background-color: white;
+  padding: 19px 10%;
+  font-size: 16px;
+  border-radius: 35px;
+  margin-top: 5vh;
+  text-align: center;
+  text-decoration: none;
+  max-width: 30rem;
+  min-width: 11rem;
+}
+.activismfooter {
+  margin-top: 50vh;
+}
+
+/* Overlay van W3Schools */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0);
+  overflow-x: hidden;
+  transition: 0.3s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  margin-top: 30px;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.overlaysection {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-right: 10rem;
+}
+
+.overlay a {
+  text-decoration: none;
+  font-size: 36px;
+  color: #ffffff;
+  display: block;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  transition: 0.3s;
+}
+
+.overlay p {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: gray;
+  margin-bottom: 1rem;
+
+}
+
+.overlayimg {
+  border-radius: 8px;
+  width: 13rem;
+  margin-bottom: 1.4rem;
+}
+
+.overlayimghead {
+  position: absolute;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.overlayimgsection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* COMPUTER */
+@media only screen and (min-width: 768px) {
+  .navlogo {
+    width: 12rem;
+    margin-left: 45px;
+  }
+
+  .videocontainer video {
+    left: 55%;
+    top: 55%;
+  }
+
+  .resonance {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .resonancebutton {
+    align-self: center;
+    margin-left: 0;
+    padding: 18px;
+    white-space: nowrap;
+    margin-top: 2%;
+    width: 220px;
+    margin-bottom: 15%;
+  }
+
+  .resonancehead {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+    margin-top: 250px;
+  }
+
+  .resonancetext {
+    text-align: center;
+    margin-left: 25%;
+    width: 50%;
+    font-size: 1.2rem;
+  }
+
+  .mountainhead {
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+    font-size: 3.6rem;
+  }
+
+  .mountainbutton {
+    align-self: center;
+    margin-left: 0;
+    padding: 18px;
+    white-space: nowrap;
+    margin-top: 1%;
+    width: 220px;
+    margin-bottom: 15%;
+  }
+
+  .slideritem {
+    width: 30rem;
+  }
+
+  .slideritem1 {
+    margin-left: 3%;
+  }
+
+  .sliderimg {
+    width: 28rem;
+    max-width: 31rem;
+  }
+
+  .slider {
+    height: 70vh;
+  }
+
+  .sliderhead {
+    font-size: 2.5rem;
+    margin-top: 12vh;
+  }
+
+  .sliderbutton {
+    margin-top: 20vh;
+  }
+
+  .mountainimgcontainer {
+    margin-top: 10vh;
+  }
+
+  .mountain {
+    height: 100vh;
+  }
+
+  .hauntedimgcontainer {
+    margin-top: 30vh;
+
+  }
+
+  .hauntedhead {
+    font-size: 3rem;
+    width: 100%;
+    margin: 0;
+    margin-top: 30vh;
+  }
+
+  .hauntedtext {
+    width: 100%;
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin-top: 5vh;
+  }
+
+  .haunted {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+  }
+
+  .hauntedbutton {
+    width: 30%;
+    margin: 0;
+    white-space: nowrap;
+    margin-top: 2%;
+    width: 240px;
+    padding: 20px;
+    font-size: 1.2em;
+  }
+.lateststories {
+  height: 100vh;
+}
+  .storieshead {
+    font-size: 2.5rem;
+    text-align: left;
+    margin-left: 4%;
+    width: 16.5rem;
+    margin-top: 5vh;
+  }
+  .storiesheads {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .storieslink {
+    font-size: 1em;
+    font-weight: 900;
+    margin-top: 7vh;
+  }
+
+  .slider2 {
+    height: 100vh;
+  }
+
+  .slider2head {
+    margin-top: 2vh;
+    font-size: 1.5em;
+    position: relative;
+    margin-left: 2rem;
+    top: 0;
+  }
+
+  .slider2button {
+    margin-top: 56vh;
+    background-color: white;
+    margin-left: 18rem;
+    font-size: 0.85em;
+    padding: 12px;
+    width: 30%;
+    position: absolute;
+    margin-right: 3rem;
+    top: 0;
+
+  }
+
+  .slider2item {
+    justify-content: left;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+    margin-right: 1.5rem;
+    width: 27rem;
+    border-radius: 10px;
+    min-height: 60vh;
+    height: 65vh;
+  }
+
+  .test {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: flex-end;
+  }
+
+  .slider2img {
+    width: 26.9rem;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  .slider2smalltext {
+    margin-top: 57vh;
+    margin-left: 3rem;
+  }
+
+  .sportensectie {
+    height: 80vh;
+    justify-content: flex-end;
+  }
+
+  .slider3img {
+    border-radius: 8px;
+    margin: 0;
+    width: 28rem;
+    
+  }
+
+  .slider3item {
+    justify-content: left;
+    margin-right: 1.5rem;
+    width: 28rem;
+    border-radius: 10px;
+
+  }
+
+  .slider3 {
+    height: 80vh;
+  }
+
+  .slider3text {
+    margin-top: 10rem;
+    position: absolute;
+    font-size: 1.8em;
+    margin-left: 2rem;
+  }
+
+  .slider3button {
+    border: 5px solid white;
+    background-color: unset;
+    color: white;
+    padding: 6px 6px;
+    width: 7rem;
+    font-size: 0.8em;
+    margin-top: 26rem;
+    position: absolute;
+    margin-left: 18rem;
+  }
+
+  .footersection {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 80%;
+    justify-content: center;
+    padding: 0;
+    margin-left: 0;
+  }
+  .footersection2 {
+    width: 40%;
+  }
+  .footer {
+    padding: 0;
+    box-sizing: unset;
+    display: flex;
+    height: 50vh;
+  } /* 2ND PAGE */
+  .bigTextBold {
+    font-size: 4em;
+  }
+  .activismfooter {
+    margin-top: 36vh;
+  }
+  /*Public Trust */
+  .publictrustHead {
+    margin-top: 30vh;
+  }
+  .greenFuturediv {
+    text-align: center;
+  }
+  .greensmalltext {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    margin-top: 2vh;
+  }
+  .smalltextactivism {
+    font-size: 1.2em;
+  }
+}
